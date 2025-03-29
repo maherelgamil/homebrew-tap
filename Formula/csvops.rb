@@ -5,20 +5,20 @@
 class Csvops < Formula
   desc "Modular CLI toolkit for working with CSV files"
   homepage "https://github.com/maherelgamil/csvops"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/maherelgamil/csvops/releases/download/v0.1.0/csvops_0.1.0_darwin_amd64.tar.gz"
-      sha256 "e1124bcd6120771bdadd3336255479fed999d30ad6007c45c67d752a0fa998ac"
+      url "https://github.com/maherelgamil/csvops/releases/download/v0.2.0/csvops_0.2.0_darwin_amd64.tar.gz"
+      sha256 "930556866bb342b9b0e19558109d892a8bba2965fd2fb4d1c925b0496a801b65"
 
       def install
         bin.install "csvops"
       end
     end
     on_arm do
-      url "https://github.com/maherelgamil/csvops/releases/download/v0.1.0/csvops_0.1.0_darwin_arm64.tar.gz"
-      sha256 "aab815f220196e92b170a6e084c062bde4ddc533ca106523da3183013b40b6fc"
+      url "https://github.com/maherelgamil/csvops/releases/download/v0.2.0/csvops_0.2.0_darwin_arm64.tar.gz"
+      sha256 "3760f82ee1c9073fa67250d53338201e0c79a2fbec36b350e988cb2c5eafc94f"
 
       def install
         bin.install "csvops"
@@ -29,8 +29,8 @@ class Csvops < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/maherelgamil/csvops/releases/download/v0.1.0/csvops_0.1.0_linux_amd64.tar.gz"
-        sha256 "70039e918fa684473e4563010680755d5f672a33b41fd4926868bb82f306ba46"
+        url "https://github.com/maherelgamil/csvops/releases/download/v0.2.0/csvops_0.2.0_linux_amd64.tar.gz"
+        sha256 "6362c872161e438cfc50305c2f253c77e7b16b49cebc1f942bfa4d3bb6c69bb7"
 
         def install
           bin.install "csvops"
@@ -39,8 +39,8 @@ class Csvops < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/maherelgamil/csvops/releases/download/v0.1.0/csvops_0.1.0_linux_arm64.tar.gz"
-        sha256 "6a954171b7023441591c45c181c983dae953a8c8a1b137aaa2b20054ecf20513"
+        url "https://github.com/maherelgamil/csvops/releases/download/v0.2.0/csvops_0.2.0_linux_arm64.tar.gz"
+        sha256 "354779b274afa8d4f3db846585a52bc2759a179ec0ebb308d8b07ab739ede067"
 
         def install
           bin.install "csvops"
